@@ -157,7 +157,7 @@ internal class Lock {
 
 			// Darwin pthread for 32-bit ARM somehow returns `EAGAIN` when
 			// using `trylock` on a `PTHREAD_MUTEX_ERRORCHECK` mutex.
-			#if DEBUG && !arch(arm)
+			#if DEBUG && arch(x86_64)
 			pthread_mutexattr_settype(attr, Int32(recursive ? PTHREAD_MUTEX_RECURSIVE : PTHREAD_MUTEX_ERRORCHECK))
 			#else
 			pthread_mutexattr_settype(attr, Int32(recursive ? PTHREAD_MUTEX_RECURSIVE : PTHREAD_MUTEX_NORMAL))
