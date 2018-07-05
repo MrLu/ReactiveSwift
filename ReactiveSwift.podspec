@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    ReactiveSwift is a Swift framework inspired by Functional Reactive Programming. It provides APIs for composing and transforming streams of values over time.
                    DESC
-  s.homepage     = "https://github.com/ReactiveCocoa/ReactiveSwift"
+  s.homepage     = "https://github.com/Mrlu/ReactiveSwift"
   s.license      = { :type => "MIT", :file => "LICENSE.md" }
   s.author       = "ReactiveCocoa"
 
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.9"
   s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target = "9.0"
-  s.source       = { :git => "https://github.com/ReactiveCocoa/ReactiveSwift.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Mrlu/ReactiveSwift.git", :tag => "#{s.version}" }
   # Directory glob for all Swift files
   s.source_files  = "Sources/*.{swift}"
   s.dependency 'Result', '~> 4.0'
